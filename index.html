@@ -55,6 +55,7 @@
         </div>
     </header>
 
+    <!-- About Me Section -->
     <section id="aboutMe" class="py-5">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -64,7 +65,7 @@
                 <div class="col-lg-8">
                     <h2 class="fon1 mb-3 text-primary">About Me</h2>
                     <p class="lead">Computer Science graduate with experience in Flutter mobile development.</p>
-                    <p>I specialize in building clean, maintainable applications using <strong>MVVM architecture</strong> and <strong>SOLID principles</strong>. From integrating secure payment gateways like Stripe to managing complex states with Cubit, I focus on creating robust, scalable user experiences.</p>
+                    <p>I specialize in building clean, maintainable applications using <strong>Clean Architecture</strong> and <strong>SOLID principles</strong>. From integrating secure backend solutions like Supabase to managing complex states with Bloc/Cubit, I focus on creating robust user experiences.</p>
                     
                     <div class="row mt-4">
                         <div class="col-md-6">
@@ -82,12 +83,13 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="py-5 bg-light">
         <div class="container">
             <h2 class="fon1 text-center mb-5">Featured Projects</h2>
             <div class="row g-4">
                 
-                <!-- Repair Hub Project -->
+                <!-- Project 1: Repair Hub (New Add) -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
                         <div id="carouselRepair" class="carousel slide" data-bs-ride="carousel">
@@ -102,74 +104,91 @@
                                     <img src="https://github.com/user-attachments/assets/6d762aa8-c03c-412f-814c-045d63531c9b" class="d-block w-100" alt="Repair Hub Web" style="height: 250px; object-fit: contain;">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRepair" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselRepair" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </button>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRepair" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselRepair" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Repair Hub (ERP)</h5>
-                            <p class="card-text small text-muted">Dual-platform ERP for technicians (Mobile) and customer tracking (Web).</p>
+                            <p class="card-text small text-muted">ERP system for technicians (Mobile) and customer tracking (Web).</p>
                             <div class="mb-3">
-                                <span class="badge badge-tech">MVVM</span>
                                 <span class="badge badge-tech">Supabase</span>
                                 <span class="badge badge-tech">Cubit</span>
                                 <span class="badge badge-tech">GoRouter</span>
                             </div>
-                            <a href="https://github.com/ahmed-mohamed74/repair_hub_erp" class="btn btn-sm btn-dark">View Repo</a>
-                            <a href="https://radiant-belekoy-3fa6f6.netlify.app/" class="btn btn-sm btn-outline-primary">Live Web</a>
+                            <a href="https://github.com/ahmed-mohamed74/repair_hub_erp" class="btn btn-sm btn-dark">Repo</a>
+                            <a href="https://radiant-belekoy-3fa6f6.netlify.app/" class="btn btn-sm btn-outline-primary">Live</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Marketi App -->
+                <!-- Project 2: Marketi App -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
                         <div id="carouselMarketi" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/market1.jpeg" class="d-block w-100" alt="Marketi 1" style="height: 250px; object-fit: contain;"></div>
-                                <div class="carousel-item"><img src="imgs/market2.jpeg" class="d-block w-100" alt="Marketi 2" style="height: 250px; object-fit: contain;"></div>
-                                <div class="carousel-item"><img src="imgs/market3.jpeg" class="d-block w-100" alt="Marketi 3" style="height: 250px; object-fit: contain;"></div>
+                                <div class="carousel-item active"><img src="imgs/market1.jpeg" class="d-block w-100" style="height: 250px; object-fit: contain;"></div>
+                                <div class="carousel-item"><img src="imgs/market2.jpeg" class="d-block w-100" style="height: 250px; object-fit: contain;"></div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarketi" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselMarketi" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Marketi App</h5>
-                            <p class="card-text small text-muted">E-commerce platform with Stripe integration and local caching with Hive.</p>
+                            <p class="card-text small text-muted">E-commerce platform with Stripe and local caching with Hive.</p>
                             <div class="mb-3">
                                 <span class="badge badge-tech">Flutter</span>
                                 <span class="badge badge-tech">Bloc</span>
                                 <span class="badge badge-tech">Stripe</span>
-                                <span class="badge badge-tech">Hive</span>
                             </div>
-                            <a href="https://github.com/ahmed-mohamed74" class="btn btn-sm btn-dark">View Repo</a>
+                            <a href="https://github.com/ahmed-mohamed74/marketi_app" class="btn btn-sm btn-dark">View Repo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Blog App -->
+                <!-- Project 3: Blog App -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
                         <div id="carouselBlog" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/blog1.png" class="d-block w-100" alt="Blog 1" style="height: 250px; object-fit: contain;"></div>
-                                <div class="carousel-item"><img src="imgs/blog2.png" class="d-block w-100" alt="Blog 2" style="height: 250px; object-fit: contain;"></div>
+                                <div class="carousel-item active"><img src="imgs/blog1.png" class="d-block w-100" style="height: 250px; object-fit: contain;"></div>
+                                <div class="carousel-item"><img src="imgs/blog2.png" class="d-block w-100" style="height: 250px; object-fit: contain;"></div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Blog App</h5>
-                            <p class="card-text small text-muted">Clean Architecture showcase using Supabase and dependency injection.</p>
+                            <p class="card-text small text-muted">Clean Architecture showcase using Supabase and GetIt.</p>
                             <div class="mb-3">
-                                <span class="badge badge-tech">Supabase</span>
                                 <span class="badge badge-tech">Clean Arch</span>
+                                <span class="badge badge-tech">Supabase</span>
                                 <span class="badge badge-tech">GetIt</span>
                             </div>
-                            <a href="https://github.com/ahmed-mohamed74" class="btn btn-sm btn-dark">View Repo</a>
+                            <a href="https://github.com/ahmed-mohamed74/blog_app" class="btn btn-sm btn-dark">View Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Sign Talk -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card">
+                        <div id="carouselSign" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img src="imgs/sign_talk1.jpeg" class="d-block w-100" style="height: 250px; object-fit: contain;"></div>
+                                <div class="carousel-item"><img src="imgs/sign_talk2.jpeg" class="d-block w-100" style="height: 250px; object-fit: contain;"></div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSign" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselSign" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sign Talk</h5>
+                            <p class="card-text small text-muted">Smart glove system for deaf communication. Graduation Grade: A+.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-tech">Bluetooth</span>
+                                <span class="badge badge-tech">Arduino</span>
+                                <span class="badge badge-tech">Firebase</span>
+                            </div>
+                            <a href="https://github.com/ahmed-mohamed74/sign-talk-app" class="btn btn-sm btn-dark">View Repo</a>
                         </div>
                     </div>
                 </div>
@@ -178,18 +197,19 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="py-5">
         <div class="container">
             <h2 class="fon1 text-center mb-5">Skills & Expertise</h2>
             <div class="row g-3 text-center">
                 <div class="col-md-3 col-6"><div class="skill-card p-3">Flutter & Dart</div></div>
-                <div class="col-md-3 col-6"><div class="skill-card p-3">MVVM / Clean Arch</div></div>
-                <div class="col-md-3 col-6"><div class="skill-card p-3">Bloc / Cubit</div></div>
+                <div class="col-md-3 col-6"><div class="skill-card p-3">Bloc / Cubit / Provider</div></div>
+                <div class="col-md-3 col-6"><div class="skill-card p-3">Clean Architecture</div></div>
                 <div class="col-md-3 col-6"><div class="skill-card p-3">REST APIs (Dio)</div></div>
-                <div class="col-md-3 col-6"><div class="skill-card p-3">Supabase / Firebase</div></div>
+                <div class="col-md-3 col-6"><div class="skill-card p-3">Firebase / Supabase</div></div>
                 <div class="col-md-3 col-6"><div class="skill-card p-3">SQLite / Hive</div></div>
                 <div class="col-md-3 col-6"><div class="skill-card p-3">OOP & SOLID</div></div>
-                <div class="col-md-3 col-6"><div class="skill-card p-3">Git & GitHub</div></div>
+                <div class="col-md-3 col-6"><div class="skill-card p-3">C++ / Java / Python</div></div>
             </div>
         </div>
     </section>
